@@ -1,6 +1,3 @@
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,76 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home - Fruits Basket</title>
 
+<!-- Requirement: Relative link to external CSS stylesheet -->
+<link href="styles.css" rel="stylesheet">
 
-<!-- Comment 1: Main heading section for the home page, this is the home page that goes into the deeper sides of the show fruits baskets. -->
-<h1 id="Fruits Baskets">Welcome to Website! Fruits Baskets!</h1>
-
-<!-- Comment 2: This is the introduction of for my website -->
-<p class="Welcome!">
-Hello! Welcome to the Fruits Baskets website, this is a fan made website sharing the show Fruits baskets as well as my thoughts on the characters. 
-</p>
-
-<h2>About Fruits Baskets, and the characters and lessons. </h2>
-
-<p>Throughout this website, I want to showcase more of lessons and characters from Fruits Baskets. Its a show I want to share and is very impactful.</p>
-
-<!-- Comment 3: This will show the different characters-->
-<p>This is where the character showcase will be. I want to go over the most important characters first to hook the reader.</p>
-
-<h3>This will show the phots of each character, with names incldued so the reader can put a name to the charactres face. </h3>
-
-<h4>Each character will also have their lesson, introduction, and zodiac if they are part of it. This will help get a small amount of information for the character.</h4>
-
-<!-- Link to external CSS stylesheet -->
-<link href="C:\Users\derek\OneDrive\260site\styles.css" rel="stylesheet">
-
-<!-- Embedded style tag with CSS comment and rule sets -->
+<!-- Requirement: Embedded style tag within <head> -->
 <style>
-/* CSS Comment: Base styling for elements */
-body {
-background-color: #e968c2;
-font-family: Arial, sans-serif;
-color: #333333;
-}
-
+/* CSS Comment: Base styling override for home page heading */
 h1 {
-color: #d9534f;
 text-align: center;
-}
-
-p {
-font-size: 16px;
-line-height: 1.5;
 }
 </style>
 </head>
 <body>
 
-<!-- Navigation menu directly after opening <body> tag -->
+<!-- Requirement 3: Navigation menu directly after opening <body> tag -->
+<!-- Requirement: Links configured to open in new tabs -->
 <nav>
-<a href="index.htm">Home</a>
-<a href="about.htm">About the Characters</a>
-<a href="gallery.htm">Photo Gallery</a>
-<a href="Lessons.htm">Lessons in the Show</a>
+<a href="index.html" target="_blank">Home</a>
+<a href="about.html" target="_blank">About the Characters</a>
+<a href="gallery.html" target="_blank">Photo Gallery</a>
+<a href="lessons.html" target="_blank">Lessons in the Show</a>
 </nav>
 
-<h1>Welcome to My Website</h1>
+<!-- ID 1: Used on <h1> (styled with text-shadow effect in CSS) -->
+<!-- Comment 1: Main heading section for the home page -->
+<h1 id="Fruits-Baskets">Welcome to Website! Fruits Baskets!</h1>
 
-<!-- Paragraph with Inline Style -->
+<!-- ID 2: Applied to <section> wrapper element -->
+<section id="main-content">
+
+<!-- Class 1: Used on <p> tag with valid class name -->
+<!-- Comment 2: Introduction for my website -->
+<p class="Welcome">
+Hello! Welcome to the Fruits Baskets website, this is a fan made website sharing the show Fruits baskets as well as my thoughts on the characters.
+</p>
+
+<!-- Requirement: Inline style attribute -->
 <p style="font-weight: bold; color: green;">
 This text uses an inline style attribute.
 </p>
 
-<!-- Link to external site opening in a new tab -->
+<h2>About Fruits Baskets, and the characters and lessons.</h2>
+
+<p>Throughout this website, I want to showcase more of lessons and characters from Fruits Baskets. Its a show I want to share and is very impactful.</p>
+
+<!-- Requirement: Image tag with Class 2, proper sizing, and alt text for accessibility -->
+<img src="images/fruits-basket-cover.jpg" alt="Fruits Basket main characters standing together" class="content-image">
+
+<!-- Comment 3: Character showcase section -->
+<p>This is where the character showcase will be. I want to go over the most important characters first to hook the reader.</p>
+
+<!-- Requirement: External link opening in a new tab -->
 <p>
 Check out
-<a href="https://fruitsbasket.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Wikipedia</a> check out this site for more information!
+<a href="https://fruitsbasket.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Fandom Wiki</a> for more information!
 </p>
 
-<!-- Link to an email address -->
+<!-- Requirement: Email link using proper mailto: protocol -->
 <p>
-Questions? <a href="dmwst12@student.mtaloyedu">Want to know more? Feel free to contact me via email!</a>.
+Questions? <a href="mailto:dmwst12@student.mtaloysius.edu">Want to know more? Feel free to contact me via email!</a>
 </p>
+
+</section>
 
 </body>
 </html>
