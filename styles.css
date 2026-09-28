@@ -1,0 +1,63 @@
+<!-- This is the stylesheet for Fruits Basket-->
+
+/* 1. Body Selector: Background color, font, and background image rules combined into one */
+body {
+background-color: #e289cf;
+background-image: url('images/background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: Arial, sans-serif;
+color: #333333;
+margin: 20px;
+}
+
+/* 2. Heading 2 Selector */
+h2 {
+color: #f1eeeb;
+border-bottom: 2px solid #6c8eeb;
+padding-bottom: 5px;
+}
+
+/* 3. Text for Paragraphs */
+p {
+font-size: 16px;
+line-height: 1.6;
+}
+
+/* --- CLASSES AND IDS --- */
+
+/* Class 1: Used on <p> tag with class="Welcome" for highlight styling */
+.Welcome {
+font-weight: bold;
+color: #2e7d32;
+background-color: #e8f5e9;
+padding: 10px;
+border-radius: 5px;
+}
+
+/* Class 2: Used on <img> tag with class="content-image" to limit image size */
+.content-image {
+max-width: 400px;
+height: auto;
+border: 3px solid #6c8eeb;
+border-radius: 8px;
+display: block;
+margin: 15px 0;
+}
+
+/* ID 1: Used on <h1> tag with id="Fruits-Baskets" featuring a text shadow effect */
+#Fruits-Baskets {
+color: #d9534f;
+text-align: center;
+/* Text Effect */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ID 2: Used on <section> tag with id="main-content" for card styling */
+#main-content {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
