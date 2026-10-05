@@ -1,63 +1,149 @@
-<!-- This is the stylesheet for Fruits Basket-->
+/* Stylesheet for Fruits Basket Website */
 
-/* 1. Body Selector: Background color, font, and background image rules combined into one */
+/* IMAGE 4 - Requirement 3 & IMAGE 3 - Step 2: Body Selector with background image inside existing body */
 body {
-background-color: #f7ecf4;
-background-image: url('images/background.jpg');
+background-color: #fdfbf7;
+background-image: url('images/background.jpg'); /* Background image declaration */
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 font-family: Arial, sans-serif;
 color: #333333;
-margin: 20px;
+margin: 0;
+padding: 20px;
 }
 
-/* 2. Heading 2 Selector */
+/* IMAGE 5 - Requirement 4 & Layout 2: Center align main container using margins */
+/* IMAGE 3 - Step 1: ID 2 styling */
+#main-content {
+background-color: rgba(255, 255, 255, 0.95);
+max-width: 800px;
+margin: 20px auto; /* Horizontal centering */
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+text-align: center; /* Center aligns text inside container */
+}
+
+/* IMAGE 5 - Layout 3: Styled navigation bar */
+nav {
+background-color: #333333;
+border-radius: 8px;
+padding: 10px 0;
+margin-bottom: 20px;
+display: flex;
+justify-content: center; /* Center nav links */
+flex-wrap: wrap;
+gap: 15px;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 16px;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: #e67e22;
+}
+
+/* --- AT LEAST 3 ELEMENT RULE SETS & COMMENTS --- */
+
+/* IMAGE 3 - Step 1: ID 1 used on <h1> tag featuring text shadow effect */
+#Fruits-Baskets {
+color: #d9534f;
+/* IMAGE 3 - Step 2: Text Effect */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+text-align: center;
+}
+
+/* IMAGE 4 - Requirement 3a: Element Rule Set 2 (h2) */
 h2 {
-color: #f1eeeb;
-border-bottom: 2px solid #6c8eeb;
+color: #e67e22;
+border-bottom: 2px solid #e67e22;
 padding-bottom: 5px;
+text-align: center;
 }
 
-/* 3. Text for Paragraphs */
+/* IMAGE 4 - Requirement 3a: Element Rule Set 3 (p) */
 p {
 font-size: 16px;
 line-height: 1.6;
+text-align: center;
 }
 
-/* --- CLASSES AND IDS --- */
-
-/* Class 1: Used on <p> tag with class="Welcome" for highlight styling */
+/* IMAGE 3 - Step 1: Class 1 used on <p> tag with class="Welcome" */
 .Welcome {
 font-weight: bold;
 color: #2e7d32;
 background-color: #e8f5e9;
-padding: 10px;
+padding: 12px;
 border-radius: 5px;
 }
 
-/* Class 2: Used on <img> tag with class="content-image" to limit image size */
+/* IMAGE 3 - Step 1: Class 2 used on <img> tag with class="content-image" */
+/* IMAGE 5 - Requirement 3: Percentage image sizing */
 .content-image {
-max-width: 400px;
+width: 90%; /* Sets image to percentage */
+max-width: 450px; /* Constrains size */
 height: auto;
-border: 3px solid #6c8eeb;
+border: 3px solid #e67e22;
 border-radius: 8px;
 display: block;
-margin: 15px 0;
+margin: 15px auto; /* Centers image */
 }
 
-/* ID 1: Used on <h1> tag with id="Fruits-Baskets" featuring a text shadow effect */
-#Fruits-Baskets {
-color: #d9534f;
+footer {
 text-align: center;
-/* Text Effect */
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+margin-top: 30px;
+font-size: 14px;
+color: #666666;
 }
 
-/* ID 2: Used on <section> tag with id="main-content" for card styling */
-#main-content {
-background-color: rgba(255, 255, 255, 0.9);
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* IMAGE 5 - Requirement 2: Media Queries for at least 2 target breakpoints */
+
+/* Breakpoint 1: Tablets and medium screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+body {
+padding: 10px;
 }
+
+#main-content {
+padding: 15px;
+width: 95%;
+}
+
+nav {
+gap: 10px;
+}
+
+nav a {
+padding: 6px 12px;
+font-size: 14px;
+}
+}
+
+/* Breakpoint 2: Mobile screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+nav {
+flex-direction: column;
+align-items: center;
+}
+
+nav a {
+width: 80%;
+text-align: center;
+}
+
+h1#Fruits-Baskets {
+font-size: 22px;
+}
+
+.content-image {
+width: 100%;
+}
+}
+

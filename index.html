@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- IMAGE 5 - Requirement 1: Viewport meta tag -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- IMAGE 2 - Requirement 5: Page title -->
 <title>Home - Fruits Basket</title>
 
-<!-- Requirement: Relative link to external CSS stylesheet -->
+<!-- IMAGE 4 - Requirement 4: External CSS link -->
 <link href="styles.css" rel="stylesheet">
 
-<!-- Requirement: Embedded style tag within <head> -->
+<!-- IMAGE 4 - Requirement 2: Embedded style tag in head -->
 <style>
-/* CSS Comment: Base styling override for home page heading */
+/* Embedded CSS overriding or specifying home page elements */
 h1 {
-text-align: center;
+margin-top: 0;
 }
 </style>
 </head>
 <body>
 
-<!-- Requirement 3: Navigation menu directly after opening <body> tag -->
-<!-- Requirement: Links configured to open in new tabs -->
+<!-- IMAGE 5 - Layout 1: Semantic <header> element -->
+<header>
+<!-- IMAGE 1 - Requirement 3 & IMAGE 5 - Layout 3: Consistent <nav> menu directly after <body> -->
 <nav>
 <a href="index.html" target="_blank">Home</a>
 <a href="about.html" target="_blank">About the Characters</a>
 <a href="gallery.html" target="_blank">Photo Gallery</a>
 <a href="lessons.html" target="_blank">Lessons in the Show</a>
 </nav>
+</header>
 
-<!-- ID 1: Used on <h1> (styled with text-shadow effect in CSS) -->
+<!-- IMAGE 5 - Layout 1: Semantic <main> element -->
+<!-- IMAGE 3 - Step 1: ID 2 (#main-content) for center alignment and card styling -->
+<main id="main-content">
+
+<!-- IMAGE 2 - Requirement 7: HTML Comment 1 -->
+<!-- IMAGE 3 - Step 1: ID 1 (#Fruits-Baskets) for text shadow -->
 <!-- Comment 1: Main heading section for the home page -->
 <h1 id="Fruits-Baskets">Welcome to Website! Fruits Baskets!</h1>
 
-<!-- ID 2: Applied to <section> wrapper element -->
-<section id="main-content">
-
-<!-- Class 1: Used on <p> tag with valid class name -->
-<!-- Comment 2: Introduction for my website -->
+<!-- IMAGE 2 - Requirement 7: HTML Comment 2 -->
+<!-- IMAGE 3 - Step 1: Class 1 (.Welcome) -->
+<!-- Comment 2: Introduction section for website -->
 <p class="Welcome">
 Hello! Welcome to the Fruits Baskets website, this is a fan made website sharing the show Fruits baskets as well as my thoughts on the characters.
 </p>
 
-<!-- Requirement: Inline style attribute -->
+<!-- IMAGE 4 - Requirement 1: Inline style attribute -->
 <p style="font-weight: bold; color: green;">
 This text uses an inline style attribute.
 </p>
@@ -49,24 +57,31 @@ This text uses an inline style attribute.
 
 <p>Throughout this website, I want to showcase more of lessons and characters from Fruits Baskets. Its a show I want to share and is very impactful.</p>
 
-<!-- Requirement: Image tag with Class 2, proper sizing, and alt text for accessibility -->
+<!-- IMAGE 3 - Step 2: Class 2 (.content-image) with proper sizing and alt text -->
+<!-- IMAGE 5 - Requirement 3: Responsive image styled with % in CSS -->
 <img src="images/fruits-basket-cover.jpg" alt="Fruits Basket main characters standing together" class="content-image">
 
-<!-- Comment 3: Character showcase section -->
+<!-- IMAGE 2 - Requirement 7: HTML Comment 3 -->
+<!-- Comment 3: Character showcase intro -->
 <p>This is where the character showcase will be. I want to go over the most important characters first to hook the reader.</p>
 
-<!-- Requirement: External link opening in a new tab -->
+<!-- IMAGE 1 - Requirement 1: External link opening in a new tab -->
 <p>
 Check out
 <a href="https://fruitsbasket.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Fandom Wiki</a> for more information!
 </p>
 
-<!-- Requirement: Email link using proper mailto: protocol -->
+<!-- IMAGE 2 - Requirement 6: Email link with mailto: attribute -->
 <p>
 Questions? <a href="mailto:dmwst12@student.mtaloysius.edu">Want to know more? Feel free to contact me via email!</a>
 </p>
 
-</section>
+</main>
+
+<!-- IMAGE 5 - Layout 1: Semantic <footer> element -->
+<footer>
+<p>&copy; 2026 Fruits Basket Fan Site. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
