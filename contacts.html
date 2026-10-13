@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Feedback - Fruits Basket</title>
+<link href="styles.css" rel="stylesheet">
+<style>
+/* Form styling to align and fit nicely within the site card */
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+max-width: 400px;
+margin: 0 auto;
+text-align: left;
+}
+label {
+font-weight: bold;
+color: #333333;
+}
+input, select {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+width: 100%;
+box-sizing: border-box;
+}
+button {
+background-color: #e67e22;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+font-weight: bold;
+}
+button:hover {
+background-color: #d35400;
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="index.html" target="_blank">Home</a>
+<a href="about.html" target="_blank">About the Characters</a>
+<a href="gallery.html" target="_blank">Photo Gallery</a>
+<a href="lessons.html" target="_blank">Lessons in the Show</a>
+<a href="contact.html" target="_blank">Contact</a>
+</nav>
+</header>
+
+<main id="main-content">
+<h1>Contact & Feedback</h1>
+<p class="Welcome">Send me your thoughts on Fruits Basket!</p>
+
+<!-- HTML Form with 4+ fields, labels, interactive date field, and validation -->
+<form id="feedbackForm" onsubmit="handleFormSubmit(event)">
+
+<!-- Field 1 -->
+<div>
+<label for="name">Your Name:</label>
+<input type="text" id="name" name="name" required placeholder="Enter your name">
+</div>
+
+<!-- Field 2 -->
+<div>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required placeholder="name@example.com">
+</div>
+
+<!-- Field 3 -->
+<div>
+<label for="character">Favorite Character:</label>
+<select id="character" name="character" required>
+<option value="">--Select a Character--</option>
+<option value="tohru">Tohru Honda</option>
+<option value="kyo">Kyo Soma</option>
+<option value="yuki">Yuki Soma</option>
+<option value="shigure">Shigure Soma</option>
+</select>
+</div>
+
+<!-- Field 4: Interactive Field (Date) -->
+<div>
+<label for="watchDate">Date You Started Watching:</label>
+<input type="date" id="watchDate" name="watchDate" required>
+</div>
+
+<!-- Submit Button -->
+<button type="submit">Submit Feedback</button>
+</form>
+
+<p id="responseMessage" style="margin-top: 20px; font-weight: bold; color: green;"></p>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Fruits Basket Fan Site. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript code for form validation / response enhancement -->
+<script>
+/* JavaScript comment: handles form submission response dynamically */
+function handleFormSubmit(event) {
+// Prevents the page from actually reloading/submitting off-site
+event.preventDefault();
+
+const nameField = document.getElementById('name').value;
+const messageArea = document.getElementById('responseMessage');
+
+// Dynamic JavaScript response
+messageArea.textContent = `Thank you, ${nameField}! Your feedback has been received successfully.`;
+}
+</script>
+
+</body>
+</html>
